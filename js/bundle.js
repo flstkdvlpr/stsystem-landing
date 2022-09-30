@@ -139,8 +139,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function cityCheck (){
-    const telephoneField = document.querySelector('.header_tel');
-    console.log(telephoneField);
+    const telephoneField = document.querySelector('.header_tel'),
+          select = document.querySelector('select');
+
+    console.log(select.options[0].outerText);
+
+    
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cityCheck);
