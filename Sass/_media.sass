@@ -1,0 +1,140 @@
+@media (max-width: 1400px)
+    .house-pc .grid-container .grid-elem-2
+        margin-left: 120px
+    .house-pc .grid-container .grid-elem-4
+        margin-left: 100px
+    .house-pc .grid-container .grid-elem-7
+        margin-left: 15px
+    .house-pc .grid-container .grid-elem-10
+        margin-right: 250px
+@media (max-width: 1024px)
+    .house-pc
+        background: url("/img/house2.4.jpg") center center/cover no-repeat
+        .container
+            .grid-container
+                .grid-elem-9
+                    margin-top: 30px
+                .grid-elem-7
+                    margin: 0
+                    .grid-elem-7-2
+                        display: none
+                    .grid-elem-7-21
+                        display: block
+                        margin-top: 30px
+@media (max-width: 1200px)
+    .grid-container
+        grid-template-columns: repeat(3, minmax(400px, 500px))
+    .house-pc .grid-container .grid-elem-3
+        margin-left: 160px
+    .house-pc .grid-container .grid-elem-4
+        margin-left: 0px
+    .house-pc .grid-container .grid-elem-6
+        margin-left: 220px
+    .house-pc .grid-container .grid-elem-7
+        margin-right: 100px
+    .house-pc .grid-container .grid-elem-7-2
+        margin-left: 1px
+
+@media (max-width: 992px)
+    .house-pc
+        display: none
+    .house-mobile
+        display: block
+        .grid-container
+            align-content: space-between
+            justify-content: center
+            .house_img_text
+                color: black
+                font-weight: 400
+                font-size: 16px
+                text-shadow: 1px 1px 2px rgb(0,0,0,0.4)
+        .grid-elem-1
+            text-align: center
+        .grid-elem-2
+            text-align: center   
+            margin-left: 10px
+        .grid-elem-3  
+            text-align: center
+        .grid-elem-4
+            text-align: center
+        .grid-elem-5  
+            text-align: center
+        .grid-elem-6
+            text-align: center
+        .grid-elem-7  
+            text-align: center
+        .grid-elem-8
+            text-align: center
+    .menu
+        padding: 13px 70px
+        &_link
+            font-size: 13px
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgb(0, 0, 0, 0.8)
+        transition: 0.6s all
+        &_active
+            left: 0%
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        left: 20px
+        top: 50%
+        transform: translateY(-50%)
+        width: 27px
+        span
+            display: block
+            height: 3px
+            width: 100%
+            background-color: #fff
+            margin-top: 4px
+            transition: 0.6s all   
+        &_active
+            span
+                margin-top: -3px
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg)
+@media (max-width: 767px)
+    h1, h2
+        width: auto    
+@media (max-width: 425px)  
+    .house-mobile
+        .grid-container
+            .house_img_text
+                font-size: 13px
+@media (max-width: 375px)
+    .house-mobile
+        .grid-container
+            grid-template-columns: repeat(4, minmax(86px, 90px))
+            img
+                width: 85px
+                height: 85px
+            .grid-elem-2
+                margin-left: 0
+@media (max-width: 375px)
+    .house-mobile
+        .grid-container
+            img
+                width: 65px
+                height: 65px
+
+            
