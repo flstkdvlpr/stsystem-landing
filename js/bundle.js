@@ -128,6 +128,25 @@ function char(){
 
 /***/ }),
 
+/***/ "./js/modules/checkCity.js":
+/*!*********************************!*\
+  !*** ./js/modules/checkCity.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function cityCheck (){
+    const telephoneField = document.querySelector('.header_tel');
+    console.log(telephoneField);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cityCheck);
+
+/***/ }),
+
 /***/ "./js/modules/fetches.js":
 /*!*******************************!*\
   !*** ./js/modules/fetches.js ***!
@@ -251,12 +270,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_char__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/char */ "./js/modules/char.js");
 /* harmony import */ var _modules_fetches__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/fetches */ "./js/modules/fetches.js");
 /* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/hamburger */ "./js/modules/hamburger.js");
+/* harmony import */ var _modules_checkCity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/checkCity */ "./js/modules/checkCity.js");
+
 
 
 
 
 
 window.addEventListener('DOMContentLoaded', ()=>{
+      (0,_modules_checkCity__WEBPACK_IMPORTED_MODULE_3__["default"])();
       (0,_modules_char__WEBPACK_IMPORTED_MODULE_0__["default"])();
       (0,_modules_fetches__WEBPACK_IMPORTED_MODULE_1__["default"])();
       (0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_2__["default"])();

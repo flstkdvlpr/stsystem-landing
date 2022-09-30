@@ -10,8 +10,13 @@ header
     position: relative
 .header
     display: grid
-    grid-template-columns: repeat(auto-fill, minmax(300px, 200px))
+    grid-template-columns: repeat(5, 1fr)
+    align-items: center
+    justify-items: center
+    padding-bottom: 5px
     &_city
+        &_title
+            text-align: center
         &_select
         &_result
             
