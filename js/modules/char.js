@@ -1,6 +1,8 @@
 function char(){
 
-    const card = document.querySelectorAll('.card-1');
+    const card = document.querySelectorAll('.card-1'),
+          hcatalog = document.querySelector('.hcatalog');
+
     card.forEach(item =>{
         item.addEventListener('click', (e)=>{
             e.preventDefault();
@@ -44,28 +46,44 @@ function char(){
             document.querySelector(item).closest(".col").style.display = 'block';
         });
     }
-    
-    
+
 
     housePc.addEventListener('click', (e)=>{
-        if(e.target && (e.target.closest(".grid-elem-2") || e.target.closest(".grid-elem-6"))){
+        if(e.target && (e.target.closest(".grid-elem-2"))){
             hideAll();
             showActiveItem('#data-os', '#data-km', '#data-gl');
+            hcatalog.innerHTML = "<a name='catalog'>Утеплитель для скатной кровли</a>";
         }
+
+        if(e.target && (e.target.closest(".grid-elem-6"))){
+            hideAll();
+            showActiveItem('#data-os', '#data-km', '#data-gl');
+            hcatalog.innerHTML = "<a name='catalog'>Утеплитель для пола</a>";
+        }
+
         if(e.target && e.target.closest(".grid-elem-3")){
             hideAll();
             showActiveItem('#data-rf','#data-gl');
+            hcatalog.innerHTML = "<a name='catalog'>Утеплитель для плоской кровли</a>";
         }
     
-        if(e.target && (e.target.closest(".grid-elem-4") || e.target.closest(".grid-elem-7-2") )){
+        if(e.target && (e.target.closest(".grid-elem-4") )){
             hideAll();
             showActiveItem('#data-km', '#data-os', '#data-wl', '#data-gl');
+            hcatalog.innerHTML = "<a name='catalog'>Утеплитель для лоджий и балконов</a>";
+        }
+
+        if(e.target && (e.target.closest(".grid-elem-7-2") )){
+            hideAll();
+            showActiveItem('#data-km', '#data-os', '#data-wl', '#data-gl');
+            hcatalog.innerHTML = "<a name='catalog'>Утеплитель для стен</a>";
         }
         
         if(e.target && (e.target.closest(".grid-elem-9") || e.target.closest(".grid-elem-7-1") )){
             showAll();
             hideAll();
             showActiveItem('#data-fn', '#data-ge', '#data-gl');
+            hcatalog.innerHTML = "<a name='catalog'>Утеплитель цоколей и фундамента</a>";
         }
         
     
@@ -73,40 +91,59 @@ function char(){
             showAll();
             hideAll();
             document.querySelector('#data-eko').closest(".col").style.display = 'block';
+            hcatalog.innerHTML = "<a name='catalog'>Утеплитель для труб</a>";
         }
     
-        
         
     });
 
         houseMob.addEventListener('click', (e)=>{
-            if(e.target && (e.target.closest(".grid-elem-2") || e.target.closest(".grid-elem-6"))){
-                hideAll();
-                showActiveItem('#data-km', '#data-os', '#data-gl');
-            }
-            if(e.target && e.target.closest(".grid-elem-3")){
+            if(e.target && e.target.closest(".grid-elem-1")){
                 showAll();
+                hideAll();
+                showActiveItem('#data-km', '#data-os', '#data-wl', '#data-gl');
+                hcatalog.innerHTML = "<a name='catalog'>Утеплитель для лоджий и балконов</a>";
+
+            }
+            if(e.target && (e.target.closest(".grid-elem-2"))){
+                hideAll();
+                showActiveItem('#data-os', '#data-km', '#data-gl');
+                hcatalog.innerHTML = "<a name='catalog'>Утеплитель для скатной кровли</a>";
+            }
+
+            if(e.target && (e.target.closest(".grid-elem-3") )){
+                hideAll();
+                showActiveItem('#data-km', '#data-os', '#data-wl', '#data-gl');
+                hcatalog.innerHTML = "<a name='catalog'>Утеплитель для стен</a>";
+            }
+
+            if(e.target && e.target.closest(".grid-elem-4")){
                 hideAll();
                 showActiveItem('#data-rf','#data-gl');
+                hcatalog.innerHTML = "<a name='catalog'>Утеплитель для плоской кровли</a>";
             }
-        
-            if(e.target && (e.target.closest(".grid-elem-4") || e.target.closest(".grid-elem-7-2") )){
-                showAll();
-                hideAll();
-                showActiveItem('#data-km','#data-os', '#data-wl', '#data-gl');
-            }
-            
-            if(e.target && (e.target.closest(".grid-elem-9") || e.target.closest(".grid-elem-7-1") )){
-                showAll();
-                hideAll();
-                showActiveItem('#data-fn','#data-ge', '#data-gl');
-            }
-        
-            if(e.target && e.target.closest(".grid-elem-10")){
+
+            if(e.target && e.target.closest(".grid-elem-5")){
                 showAll();
                 hideAll();
                 document.querySelector('#data-eko').closest(".col").style.display = 'block';
-            } 
+                hcatalog.innerHTML = "<a name='catalog'>Утеплитель для труб</a>";
+            }
+
+            if(e.target && (e.target.closest(".grid-elem-6") || e.target.closest(".grid-elem-8") )){
+                showAll();
+                hideAll();
+                showActiveItem('#data-fn', '#data-ge', '#data-gl');
+                hcatalog.innerHTML = "<a name='catalog'>Утеплитель цоколей и фундамента</a>";
+            }
+
+            if(e.target && (e.target.closest(".grid-elem-7"))){
+                hideAll();
+                showActiveItem('#data-os', '#data-km', '#data-gl');
+                hcatalog.innerHTML = "<a name='catalog'>Утеплитель для пола</a>";
+            }
+        
+ 
         });
 }
 

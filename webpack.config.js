@@ -9,7 +9,7 @@ module.exports = {
   },
   watch: true,
 
-  devtool: (none),
+  devtool: 'hidden-source-map',
 
   module: {}
 };
