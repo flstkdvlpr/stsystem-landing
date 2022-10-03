@@ -19,7 +19,7 @@
             <div class="header">
                 <div class="header_logo"><img src="/img/logo-sm.png" alt="logo"></div>
                 <div class="header_city">
-                    <div class="header_city_title">Выберите ваш город</div>                                
+                    <div class="header_city_title">Выберите Ваш город:</div>                                
                     <select class="header_city_select form-select" data-calc-region>
                             <option value="1">Ростов-на-Дону</option>
                             <option value="2">Краснодар</option>
@@ -27,9 +27,9 @@
                             <option value="4">Симферополь</option>
                     </select>
                 </div>
-                <div class="header_tel"></div>
-                <div class="header_time">time</div>
-                <div class="header_callbutton">callButton</div>
+                <div class="header_tel"><a href="tel:+786326003320">+7 (863) 260-03-20</a></div>
+                <div class="header_time">ул. Юго-восточная промзона, 12/4</div>
+                <div class="header_callbutton"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#callbackmodal">Заказ звонка</button></div>
             </div>
             </div>
             <div class="navigation">
@@ -712,6 +712,38 @@
                 </div>
                 <div class="mb-3">
                 <label for="recipient-name" class="col-form-label" id="form12">Цена зависит от региона!</label>
+                <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Выберите свой регион</option>
+                    <option>Ростовская область</option>
+                    <option>Краснодарский Край</option>
+                    <option>Северный Кавказ</option>
+                    <option>Крым</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="callbackmodal" tabindex="-1" aria-labelledby="callbackmodallLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="callbackmodal">Оставьте номер, мы оперативно презвоним!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label" id="form12">Телефон:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                <label for="recipient-name" class="col-form-label" id="form12"></label>
                 <select class="form-select" id="validationTooltip04" required>
                     <option selected disabled value="">Выберите свой регион</option>
                     <option>Ростовская область</option>
