@@ -26,10 +26,18 @@ function char(){
         });
     });
 
+    const removeAnimation = () =>{
+        card.forEach(item => {
+            item.classList.remove('animate__animated', 'animate__zoomIn');
+        });
+    }
+
+
     function hideAll(){
         card.forEach(item => {
-            item.classList.add('animate__animated', 'animate__zoomIn', 'animate__slow');
+            item.classList.add('animate__animated', 'animate__zoomIn');
             item.closest(".col").style.display = 'none';
+            setTimeout(removeAnimation, 1000);
         });
     }
 
