@@ -9,7 +9,7 @@ function char(){
             if(e.target && e.target.dataset.value == 'speclink'){
                 item.childNodes[3].classList.remove('hide');
                 item.childNodes[1].classList.add('hide');
-
+                item.classList.add('animate__animated', 'animate__flipInY');
             }
         });
     }); 
@@ -20,13 +20,15 @@ function char(){
             if(e.target && e.target.dataset.value == 'specendlink'){
                 item.childNodes[1].classList.remove('hide');
                 item.childNodes[3].classList.add('hide');
+                item.classList.add('animate__animated', 'animate__flipInY');
+
             }
         });
     });
 
     function hideAll(){
         card.forEach(item => {
-            item.classList.add('animate__animated', 'animate__bounce');
+            item.classList.add('animate__animated', 'animate__zoomIn', 'animate__slow');
             item.closest(".col").style.display = 'none';
         });
     }
