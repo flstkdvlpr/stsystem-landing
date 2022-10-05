@@ -24,6 +24,7 @@ function char(){
                 item.childNodes[3].classList.remove('hide');
                 item.childNodes[1].classList.add('hide');
                 item.classList.add('animate__animated', 'animate__flipInY');
+
             }
         });
     }); 
@@ -35,7 +36,9 @@ function char(){
                 item.childNodes[1].classList.remove('hide');
                 item.childNodes[3].classList.add('hide');
                 item.classList.add('animate__animated', 'animate__flipInY');
-
+                card.forEach(item =>{
+                    item.classList.remove('animate__animated', 'animate__flipInY');
+                })
             }
         });
     });
