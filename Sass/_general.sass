@@ -226,8 +226,8 @@ footer
     gap: 20px
     justify-items: center
     justify-content: space-around
-    grid-template-columns: repeat(auto-fill, minmax(300px, 400px))
-    grid-template-rows: repeat(2, minmax(200px, auto))
+    grid-template-columns: repeat(auto-fill, minmax(230px, 330px))
+    grid-template-rows: repeat(auto-fill, minmax(200px, auto))
     grid-auto-rows: minmax(100px, auto)
 
 .set .grid_elem
@@ -251,6 +251,37 @@ footer
             font-size: 15px
             font-weight: 500
             margin-left: 20px
+.set-item 
+    .grid-container-item
+        display: grid
+        justify-content: space-evenly !important
+        gap: 20px
+        justify-items: center
+        justify-content: space-around
+        grid-template-columns: repeat(auto-fill, minmax(375px, 540px))
+        grid-template-rows: repeat(auto-fill, minmax(200px, auto))
+        grid-auto-rows: minmax(100px, auto)
+        .grid_elem
+            padding: 10px 0
+            border: 1px solid #ced4da
+            border-radius: 5px
+            &_title
+                text-align: center
+                font-size: 1.25rem
+                font-weight: 700
+            &_descr
+                padding: 0 10px 10px 20px
+            img
+                display: block
+                margin: 0 auto
+            &_url
+                a
+                    text-decoration: none
+                    color: grey
+                    font-size: 15px
+                    font-weight: 500
+                    margin-left: 20px
+                    margin-bottom: 20px
 .calc
     .card
         padding: 15px 15px 15px 5px

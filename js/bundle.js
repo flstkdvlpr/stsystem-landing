@@ -303,6 +303,48 @@ function menuCatalogCancel(){
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuCatalogCancel);
 
+/***/ }),
+
+/***/ "./js/modules/setcards.js":
+/*!********************************!*\
+  !*** ./js/modules/setcards.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function setcards(){
+
+    const setCards = document.querySelectorAll('.set_card');
+    console.log(setCards[0].children[3]);
+
+    function hideAllSets (){
+        setCards.forEach(item =>{
+            item.closest(".set-dachbords").style.display = 'none';
+        })
+    }
+
+    function showAllSets (){
+        setCards.forEach(item =>{
+            item.closest(".set-dachbords").style.display = 'block';
+        })
+    }
+
+    setCards.forEach(item => {
+        item.addEventListener('click', ()=>{
+            setCards.forEach(item =>{
+                item.classList.add('animate__animated', 'animate__zoomOut');
+                setTimeout(hideAllSets, 500);
+            })
+        })
+    })
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setcards);
+
 /***/ })
 
 /******/ 	});
@@ -373,6 +415,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_fetches__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/fetches */ "./js/modules/fetches.js");
 /* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/hamburger */ "./js/modules/hamburger.js");
 /* harmony import */ var _modules_checkCity__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/checkCity */ "./js/modules/checkCity.js");
+/* harmony import */ var _modules_setcards__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/setcards */ "./js/modules/setcards.js");
+
 
 
 
@@ -386,6 +430,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
       (0,_modules_char__WEBPACK_IMPORTED_MODULE_1__["default"])();
       (0,_modules_fetches__WEBPACK_IMPORTED_MODULE_2__["default"])();
       (0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_3__["default"])();
+      (0,_modules_setcards__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
 })();
 
