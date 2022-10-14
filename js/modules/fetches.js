@@ -1,6 +1,6 @@
 function fetches(){
     try{
-    fetch('http://localhost:3000/offers')
+    fetch('js/price.json')
     .then(data => data.json())
     .then(res => console.log(res));
     } catch(error){
