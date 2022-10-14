@@ -4,6 +4,7 @@ import fetches from './modules/fetches';
 import hamburger from './modules/hamburger';
 import cityCheck from './modules/checkCity';
 import setcards from './modules/setcards';
+import fromrequest from './modules/fromrequest';
 
 
 window.addEventListener('DOMContentLoaded', ()=>{
@@ -13,4 +14,5 @@ window.addEventListener('DOMContentLoaded', ()=>{
       fetches();
       hamburger();
       setcards();
+      fromrequest();
 });
