@@ -15,12 +15,23 @@ function setcards(){
         })
     }
 
+    const actionForCards = function (classTag){
+        document.querySelector(classTag).classList.remove('hide');
+        document.querySelector(classTag).classList.add('animate__animated', 'animate__zoomIn');
+    }
+
     setCards.forEach(item => {
-        item.addEventListener('click', ()=>{
-            setCards.forEach(item =>{
-                item.classList.add('animate__animated', 'animate__zoomOut');
-                setTimeout(hideAllSets, 500);
-            })
+        item.addEventListener('click', (e)=>{
+            e.preventDefault();
+            if(e.target && e.target.dataset.value == "proof"){
+                setCards.forEach(item =>{
+                    item.classList.add('animate__animated', 'animate__zoomOut');
+                    setTimeout(hideAllSets, 500);
+                    actionForCards('.set-item-proof');
+                })
+
+                document.querySelector('.set-tittle').innerHTML = "<a name='catalog'>Каталог</a>";
+            }
         })
     })
 
