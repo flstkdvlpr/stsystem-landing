@@ -113,8 +113,6 @@ h1, h2 {
 h1 a, h2 a {
   text-decoration: none;
   color: #ffffff;
-  pointer-events: none;
-  cursor: default;
 }
 
 .hamburger {
@@ -286,8 +284,8 @@ footer {
   gap: 20px;
   justify-items: center;
   justify-content: space-around;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
-  grid-template-rows: repeat(2, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 330px));
+  grid-template-rows: repeat(auto-fill, minmax(200px, auto));
   grid-auto-rows: minmax(100px, auto);
 }
 
@@ -314,6 +312,35 @@ footer {
   font-size: 15px;
   font-weight: 500;
   margin-left: 20px;
+}
+
+.grid-container-item {
+  display: grid;
+  justify-content: space-evenly !important;
+  gap: 20px;
+  justify-items: center;
+  justify-content: space-around;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 370px));
+  grid-template-rows: repeat(auto-fill, minmax(200px, auto));
+  grid-auto-rows: minmax(100px, auto);
+}
+.grid-container-item .grid_elem {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px 20px 0 10px;
+}
+.grid-container-item .grid_elem_title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0px 0 10px 0px;
+}
+.grid-container-item .grid_elem_descr {
+  line-height: 1.8;
+}
+.grid-container-item .grid_elem img {
+  display: block;
+  margin: 0 auto;
 }
 
 .calc .card {
