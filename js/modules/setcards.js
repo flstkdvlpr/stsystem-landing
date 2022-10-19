@@ -53,6 +53,10 @@ function setcards(){
     showSetcloseSubset('.set-item-proof');
     closeSetShowSubset('.set-item-froof', "froof");
     showSetcloseSubset('.set-item-froof');
+    closeSetShowSubset('.set-item-wall', "wall");
+    showSetcloseSubset('.set-item-wall');
+
+    
 
     
 
