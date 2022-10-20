@@ -393,6 +393,8 @@ function setcards(){
     showSetcloseSubset('.set-item-froof');
     closeSetShowSubset('.set-item-wall', "wall");
     showSetcloseSubset('.set-item-wall');
+    closeSetShowSubset('.set-item-floor', "floor");
+    showSetcloseSubset('.set-item-floor');
 
     
 
