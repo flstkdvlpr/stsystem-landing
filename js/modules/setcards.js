@@ -1,7 +1,6 @@
 function setcards(){
 
     const setCards = document.querySelectorAll('.set_card');
-    console.log(setCards[0].children[3]);
 
     function hideAllSets (){
         setCards.forEach(item =>{

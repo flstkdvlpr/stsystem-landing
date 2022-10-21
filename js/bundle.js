@@ -2,6 +2,26 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./js/modules/calc.js":
+/*!****************************!*\
+  !*** ./js/modules/calc.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function calc(){
+    const calcForm = document.forms.calc;
+    const selects = document.querySelector('[data-calc-region]');
+    console.log(selects);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calc);
+
+/***/ }),
+
 /***/ "./js/modules/char.js":
 /*!****************************!*\
   !*** ./js/modules/char.js ***!
@@ -255,7 +275,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function fromrequest(){
     const form = document.querySelectorAll('form');
-    console.log(form);
 
     
 }
@@ -339,7 +358,6 @@ __webpack_require__.r(__webpack_exports__);
 function setcards(){
 
     const setCards = document.querySelectorAll('.set_card');
-    console.log(setCards[0].children[3]);
 
     function hideAllSets (){
         setCards.forEach(item =>{
@@ -482,6 +500,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_checkCity__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/checkCity */ "./js/modules/checkCity.js");
 /* harmony import */ var _modules_setcards__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/setcards */ "./js/modules/setcards.js");
 /* harmony import */ var _modules_fromrequest__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/fromrequest */ "./js/modules/fromrequest.js");
+/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/calc */ "./js/modules/calc.js");
+
 
 
 
@@ -499,6 +519,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
       (0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_3__["default"])();
       (0,_modules_setcards__WEBPACK_IMPORTED_MODULE_5__["default"])();
       (0,_modules_fromrequest__WEBPACK_IMPORTED_MODULE_6__["default"])();
+      (0,_modules_calc__WEBPACK_IMPORTED_MODULE_7__["default"])();
 });
 })();
 

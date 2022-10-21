@@ -21,7 +21,7 @@
                 <div class="header_logo"><img src="/img/logo-sm.png" alt="logo"></div>
                 <div class="header_city">
                     <div class="header_city_title">Выберите Ваш город:</div>                                
-                    <select class="header_city_select form-select" data-calc-region>
+                    <select class="header_city_select form-select">
                             <option value="1">Ростов-на-Дону</option>
                             <option value="2">Краснодар</option>
                             <option value="3">Пятигорск</option>
@@ -36,7 +36,7 @@
                 <div class="header-md_logo"><img src="/img/logo-sm.png" alt="logo"></div>
                 <div class="header-md_city">
                     <div class="header-md_city_title">Выберите Ваш город:</div>                                
-                    <select class="header-md_city_select form-select" data-calc-region>
+                    <select class="header-md_city_select form-select">
                             <option value="1">Ростов-на-Дону</option>
                             <option value="2">Краснодар</option>
                             <option value="3">Пятигорск</option>
@@ -968,53 +968,41 @@
                     <div class="col-md-12">
                         <h2>Калькулятор</h2>
                         <div class="card" style="width: 18rem;">
-                            <form action="#">
+                            <form action="#" name="calc">
                                 <select class="form-select" data-calc-region>
                                     <option selected>Выберите регион</option>
-                                    <option value="1">Ростовская область</option>
-                                    <option value="2">Краснодарский край</option>
-                                    <option value="3">Северный Кавказ</option>
-                                    <optыion value="4">Крым</optыion>
+                                    <option value="region_rnd">Ростовская область</option>
+                                    <option value="region_krr">Краснодарский край</option>
+                                    <option value="region_skv">Северный Кавказ</option>
+                                    <optыion value="region_krm">Крым</optыion>
                                 </select>
                                 <select class="form-select" data-calc-object>
                                     <option selected>Выберите тип объекта</option>
-                                    <option value="1">Частный объект</option>
-                                    <option value="2">Коммерческий </option>
+                                    <option value="obj_private">Частный объект</option>
+                                    <option value="obj_public">Коммерческий </option>
                                 </select>
                                 <select class="form-select" data-calc-material>
                                     <option selected>Выберите тип материала</option>
-                                    <option value="1">Пеноплэкс Основа</option>
-                                    <option value="2">Пеноплэкс Комфорт</option>
-                                    <option value="3">Пеноплэкс Стена</option>
-                                    <option value="4">Пеноплэкс Фундамент</option>
-                                    <option value="5">Пеноплэкс Кровля</option>
-                                    <option value="6">Пеноплэкс ГЕО</option>
+                                    <option value="material_os">Пеноплэкс Основа</option>
+                                    <option value="material_kf">Пеноплэкс Комфорт</option>
+                                    <option value="material_st">Пеноплэкс Стена</option>
+                                    <option value="material_fn">Пеноплэкс Фундамент</option>
+                                    <option value="material_kr">Пеноплэкс Кровля</option>
+                                    <option value="material_ge">Пеноплэкс ГЕО</option>
                                 </select>
-                                <select class="form-select" data-calc-material>
+                                <select class="form-select" data-calc-thick>
                                     <option selected>Выберите толщину плиты</option>
-                                    <option value="1">20 мм</option>
-                                    <option value="2">30 мм</option>
-                                    <option value="3">40 мм</option>
-                                    <option value="4">50 мм</option>
-                                    <option value="5">100 мм</option>
-                                    <option value="6">Пеноплэкс ГЕО</option>
+                                    <option value="20">20 мм</option>
+                                    <option value="30">30 мм</option>
+                                    <option value="40">40 мм</option>
+                                    <option value="50">50 мм</option>
+                                    <option value="100">100 мм</option>
                                 </select>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Площадь м²</span>
                                     <input type="text" class="form-control" placeholder="120" aria-label="Username">
                                 </div>
                                 <button  class="btn btn-primary">Рассчёт</button>
-  <!--                               <div class="calc_row">
-                                    <div class="mb-3">
-                                    <label for="rub">RUB</label>
-                                    <input id="rub" type="text">
-                                    </div>
-                                </div>
-                                <div class="calc_row">
-                                    <div class="mb-3">
-                                    <label for="rub">USD</label>
-                                    <input id="usd" type="text">
-                                    </div> -->
                                 </div>
                             </form>
                         </div>
@@ -1126,7 +1114,7 @@
                     <option name="Краснодарский Край">Краснодарский Край</option>
                     <option name="Северный Кавказ">Северный Кавказ</option>
                     <option name="Крым">Крым</option>
-                  </select>
+                </select>
                 </div>
               </form>
             </div>

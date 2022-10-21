@@ -5,6 +5,7 @@ import hamburger from './modules/hamburger';
 import cityCheck from './modules/checkCity';
 import setcards from './modules/setcards';
 import fromrequest from './modules/fromrequest';
+import calc from './modules/calc';
 
 
 window.addEventListener('DOMContentLoaded', ()=>{
@@ -15,4 +16,5 @@ window.addEventListener('DOMContentLoaded', ()=>{
       hamburger();
       setcards();
       fromrequest();
+      calc();
 });
